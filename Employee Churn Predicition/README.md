@@ -1,1 +1,2 @@
 ### Employee churn can negatively impact businesses. Based on employee survey data, the goal of this project was to create a model that could predict which employees would be most likely to churn.
+The project is completed based of the HR Dataset from Kaggle. The data was cleaned and prepped for model training. The data was split into testing and training sets. The models selected were trained in order to find one that classied the employees the best. 
