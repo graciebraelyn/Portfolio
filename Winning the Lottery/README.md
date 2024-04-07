@@ -1,1 +1,1 @@
-
+### I had always questioned whether the lottery was rigged or weighted. I conducted an analysis to see if I can establish a pattern between winning Numbers.
