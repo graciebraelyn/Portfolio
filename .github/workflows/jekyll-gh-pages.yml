@@ -1,13 +1,18 @@
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
-  - jekyll-remote-theme
+- jekyll-remote-theme
 
-title: Gracie Braelyn's Portfolio
-description: Welcome to my professional portfolio. Explore my work and get in touch.
-author: Gracie Inman
-url: "https://graciebraelyn.github.io"
-baseurl: "/Portfolio"
-github_username: graciebraelyn
+title: Gracie Inman's Portfolio homepage
+description: Bookmark this to keep an eye on my project updates!# Sample workflow for building and deploying a Jekyll site to GitHub Pages
+name: Deploy Jekyll with GitHub Pages dependencies preinstalled
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -49,4 +54,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
