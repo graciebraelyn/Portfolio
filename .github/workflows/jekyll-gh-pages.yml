@@ -2,56 +2,51 @@ remote_theme: pages-themes/minimal@v0.2.0
 plugins:
   - jekyll-remote-theme
 
-title: Gracie Inman's Portfolio
+title: Gracie Braelyn's Portfolio
 description: Welcome to my professional portfolio. Explore my work and get in touch.
-author: Gracie Inman
-url: "https://yourdomain.com" # Update this with your actual domain
-baseurl: "" # Change if your site is hosted in a subdirectory
-github_username: yourgithubusername # Update with your GitHub username
+author: Gracie Braelyn
+url: "https://graciebraelyn.github.io/Portfolio/"
+baseurl: "/Portfolio"
+github_username: graciebraelyn
 
-# Build settings
-markdown: kramdown
-theme: minima
-exclude:
-  - Gemfile
-  - Gemfile.lock
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
-# SEO settings
-seo:
-  type: website
-  title: Gracie Inman's Portfolio
-  description: Welcome to my professional portfolio. Explore my work and get in touch.
-  image: /assets/images/your-profile-image.jpg # Update with your profile image path
-  url: "https://yourdomain.com" # Update with your actual domain
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
-# Navigation links
-navbar_links:
-  - title: Home
-    url: /
-  - title: Portfolio
-    url: /portfolio/
-  - title: About
-    url: /about/
-  - title: Contact
-    url: /contact/
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
 
-# Footer
-footer_links:
-  - title: GitHub
-    url: https://github.com/yourgithubusername
-  - title: LinkedIn
-    url: https://www.linkedin.com/in/yourlinkedinusername
-  # Add more links as needed
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
-# Social media links
-social_links:
-  - title: Twitter
-    url: https://twitter.com/yourtwitterusername
-  - title: Instagram
-    url: https://www.instagram.com/yourinstagramusername
-  # Add more social media links as needed
-
-# Google Analytics
-google_analytics: UA-123456789-1 # Replace with your Google Analytics tracking ID
-
-# Build and deployment settings...
