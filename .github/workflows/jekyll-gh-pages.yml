@@ -2,7 +2,7 @@ remote_theme: pages-themes/minimal@v0.2.0
 plugins:
 - jekyll-remote-theme
 
-title: Gracie Inman's Portfolio homepage
+title: Gracie Inman's Portfolio
 description: Bookmark this to keep an eye on my project updates!
 
 on:
