@@ -29,7 +29,13 @@ Employee churn can negatively impact businesses. Based on employee survey data, 
 
 Using the loan dataset, the goal was to build a model that could predict if a customer was likely to default on their loan at the time of application.
 
-9.	DSC 680 Weeks 5-8 Project
+9.	Obesity Prediction Model
     
-10.	DSC 690 Weeks 9-12 Project
+The Obesity project uses survery lifestyle data to create a model that predicts if someone is liekly to be or become obese based on their current lifestyle.
+
+10. Speeding Dating Deciding to Date
+
+Using survey data, it is evaluated what is most likley to make someone match with the person they are talking with. In addition, possible use cases are evaulated. 
+    
+
 
