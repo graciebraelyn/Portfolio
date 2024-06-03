@@ -35,7 +35,7 @@ The Obesity project uses survery lifestyle data to create a model that predicts 
 
 9. Speeding Dating Deciding to Date
 
-Using survey data, it is evaluated what is most likley to make someone match with the person they are talking with. In addition, possible use cases are evaulated. 
+Using survey data, it is evaluated what is most likley to make someone match with the person they are talking with. In addition, possible use cases are evaulated.
 
 10. Sales Data Analysis using Spark and Hive
 This project showcases the amount of information you can gather from a small amount of data. The data was generated using Spark and input into a Hive table for analysis.
