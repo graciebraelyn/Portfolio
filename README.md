@@ -5,7 +5,7 @@
    
 I had always questioned whether the lottery was rigged or weighted. I analyzed to see if I could establish a pattern between winning numbers. This analysis was completed using NY lottery data.
 
-3.	Telco Customer Churn Model
+2.	Telco Customer Churn Model
 
 Customer churn is a problem that affects many businesses. Using the telco dataset from Kaggle, the goal of the project was to build a model that could determine which customers would be likely to churn.
 
@@ -29,13 +29,16 @@ Employee churn can negatively impact businesses. Based on employee survey data, 
 
 Using the loan dataset, the goal was to build a model that could predict if a customer was likely to default on their loan at the time of application.
 
-9.	Obesity Prediction Model
+8.	Obesity Prediction Model
     
 The Obesity project uses survery lifestyle data to create a model that predicts if someone is liekly to be or become obese based on their current lifestyle.
 
-10. Speeding Dating Deciding to Date
+9. Speeding Dating Deciding to Date
 
 Using survey data, it is evaluated what is most likley to make someone match with the person they are talking with. In addition, possible use cases are evaulated. 
+
+10. Sales Data Analysis using Spark and Hive
+This project showcases the amount of information you can gather from a small amount of data. The data was generated using Spark and input into a Hive table for analysis.
     
 
 
