@@ -34,6 +34,7 @@ Using the loan dataset, the goal was to build a model that could predict if a cu
 The Obesity project uses survery lifestyle data to create a model that predicts if someone is liekly to be or become obese based on their current lifestyle.
 
 9. Speeding Dating Deciding to Date
+   
 
 Using survey data, it is evaluated what is most likley to make someone match with the person they are talking with. In addition, possible use cases are evaulated.
 
